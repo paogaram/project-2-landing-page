@@ -1,0 +1,254 @@
+/* Header Section */
+.page-header {
+  color: #3D2B1F;
+  text-align: center;
+  background-color: #F1E9D2;
+  padding: 50px;
+  font-size: 30px;
+  font-family: Montserrat;
+}
+
+h2{
+  font-weight: 400;
+  font-size: 35px;
+  width: auto;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  color: #6F4E37;
+  letter-spacing: 5px;
+  padding: 30px;
+  font-family: Montserrat;
+  font-weight: 400;
+  width: auto;
+}
+
+/* Circle Grid */
+.circle-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #F3E6AB;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #6F4E37;
+  font-family: Nunito;
+}
+
+/* Finished Product Picture */
+#finished-product-picture {
+  background-color: #F1E9D2;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+#finished-product-picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* Story Section */
+#story p {
+  font-size: 20px;
+  color: #3D2B1F;
+  padding: 0 70px;
+}
+
+/* Link */
+a {
+  color: #6F4E37;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family: Nunito;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  opacity: 0.5;
+}
+
+/* Call To Action Section */
+#cta {
+  text-align: center;
+  font-size: 30px;
+  color: #3D2B1F;
+  font-family: Montserrat;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #F3E6AB;
+  color: #6F4E37;
+  font-size: 25px;
+  padding: 18px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: Montserrat;
+}
+
+.cta-button:hover {
+  background-color: #F1E9D2;
+  color: #3D2B1F;
+}
+
+.cta-button:active {
+  transform: scale(0.97);
+}
+
+/* Ingredients and Instructions Section */
+#ingredients-and-instructions h2 {
+  background-color: #F1E9D2;
+  padding: 20px 20px 20px 70px;
+  color:  #6F4E37;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-family: Montserrat;
+}
+
+.ingredients-list {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  padding: 0 150px;
+  font-size: 18px;
+  color: #3D2B1F;
+  font-family: Nunito;
+}
+
+.instructions-list {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  padding: 0 150px;
+  font-size: 18px;
+  color: #3D2B1F; 
+  font-family: Nunito;
+}
+
+/* Picture Gallery Section */
+.grid-pictures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.grid-pic {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.pic-frame {
+  background-color: #F1E9D2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: #3D2B1F;
+  color: #F1E9D2;
+  padding: 25px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .page-header {
+    padding: 25px;
+    font-size: 22px;
+  }
+
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  .page-header h2 {
+    font-size: 18px;
+  }
+
+  /* CIRCLES */
+  .circle-container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    font-size: 14px;
+  }
+
+  /* PICTURE */
+  #finished-product-picture {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #finished-product-picture img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* STORY SECTION */
+  #story p {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  /* INGREDIENTS AND INSTRUCTIONS */
+  .ingredients-list,
+  .instructions-list {
+    padding: 0 30px;
+    font-size: 16px;
+  }
+
+  /* CTA */
+  #cta {
+    font-size: 22px;
+  }
+
+  .cta-button {
+    font-size: 18px;
+    padding: 12px 18px;
+  }
+
+  /* PICTURES */
+  .grid-pictures {
+    grid-template-columns: 1fr;
+  }
+  
+  /* FOOTER */
+.footer-section {
+  font-size: 8px;
+}
